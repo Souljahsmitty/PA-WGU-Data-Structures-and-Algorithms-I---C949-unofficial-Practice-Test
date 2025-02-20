@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 return;
             }
 
-            if (selectedAnswer.value === "C") {
-                feedback.textContent = "✔ Correct! A correctly orders the functions by their growth rate (Big-O notation).";
+            if (selectedAnswer.value === "B") {
+                feedback.textContent = "✔ Correct! Binary search always starts in the middle and keeps cutting the list in half. Since we start with 64 numbers, we check 6 numbers before realizing the number is missing!";
                 feedback.className = "correct";
             } else {
-                feedback.textContent = "✘ Incorrect. The correct answer is **A. correctly orders the functions by their growth rate (Big-O notation).";
+                feedback.textContent = "✘ Incorrect. B.Binary search always starts in the middle and keeps cutting the list in half. Since we start with 64 numbers, we check 6 numbers before realizing the number is missing!";
                 feedback.className = "wrong";
             }
         });
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (backButton) {
         backButton.addEventListener("click", function() {
             saveAnswer(); // ✅ Save before going back
-            window.location.href = "../Question43/index.html";
+            window.location.href = "../Question47/index.html";
         });
     } else {
         console.error("backQuestion button not found!");
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (nextButton) {
         nextButton.addEventListener("click", function() {
             saveAnswer(); // ✅ Save before going forward
-            window.location.href = "../Question45/index.html";
+            window.location.href = "../Question49/index.html";
         });
     } else {
         console.error("nextQuestion button not found!");

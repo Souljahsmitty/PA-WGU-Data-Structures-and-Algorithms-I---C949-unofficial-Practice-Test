@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 return;
             }
 
-            if (selectedAnswer.value === "C") {
-                feedback.textContent = "✔ Correct! A correctly orders the functions by their growth rate (Big-O notation).";
+            if (selectedAnswer.value === "A") {
+                feedback.textContent = "✔ Correct! A There are 7 numbers, so the middle is position 4 (index 3 in zero-based indexing).The middle number is 9..";
                 feedback.className = "correct";
             } else {
-                feedback.textContent = "✘ Incorrect. The correct answer is **A. correctly orders the functions by their growth rate (Big-O notation).";
+                feedback.textContent = "✘ Incorrect. The correct answer is **A. There are 7 numbers, so the middle is position 4 (index 3 in zero-based indexing).The middle number is 9.";
                 feedback.className = "wrong";
             }
         });
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (backButton) {
         backButton.addEventListener("click", function() {
             saveAnswer(); // ✅ Save before going back
-            window.location.href = "../Question43/index.html";
+            window.location.href = "../Question44/index.html";
         });
     } else {
         console.error("backQuestion button not found!");
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (nextButton) {
         nextButton.addEventListener("click", function() {
             saveAnswer(); // ✅ Save before going forward
-            window.location.href = "../Question45/index.html";
+            window.location.href = "../Question46/index.html";
         });
     } else {
         console.error("nextQuestion button not found!");
