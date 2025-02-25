@@ -61,14 +61,14 @@ document.addEventListener("DOMContentLoaded", function() {
 				feedback.textContent = "✔ Correct! class is considered an ADT because it consists of **variables and methods** that define behavior and encapsulation.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is D: class is considered an ADT because it consists of **variables and methods** that define behavior and encapsulation.";
+				feedback.textContent = "✘ Incorrect. The correct answer is C: class is considered an ADT because it consists of **variables and methods** that define behavior and encapsulation.";
 				feedback.className = "wrong";
 			}
         });
     } else {
         console.error("submitAnswer button not found!");
     }
-	const resetButton = document.getElementById("resetQuiz");
+    const resetButton = document.getElementById("resetQuiz");
     if (resetButton) {
         resetButton.addEventListener("click", function() {
             localStorage.clear(); // Clears all stored answers and resets timer
