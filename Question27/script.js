@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "D") {
-				feedback.textContent = "✔ Correct!  **Dequeue()** removes 7, then **Enqueue(6) and Enqueue(S)** add 6 and S to the end, followed by **Dequeue()** removing 9, resulting in **9,8,6**.";
+			if (selectedAnswer.value === "C") {
+				feedback.textContent = "✔ Correct!  **Dequeue()** removes 7, then **Enqueue(6) and Enqueue(S)** add 6 and S to the end, followed by **Dequeue()** removing 9, resulting in ***8,6,5**.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is D:  9,8,6**. A queue follows FIFO, so the operations must be processed in order.";
+				feedback.textContent = "✘ Incorrect. The correct answer is C:  8,6,5**. A queue follows FIFO, so the operations must be processed in order.";
 				feedback.className = "wrong";
 			}
         });
