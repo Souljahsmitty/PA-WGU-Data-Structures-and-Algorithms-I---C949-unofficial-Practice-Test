@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.error("submitAnswer button not found!");
     }
-	const resetButton = document.getElementById("resetQuiz");
+    const resetButton = document.getElementById("resetQuiz");
     if (resetButton) {
         resetButton.addEventListener("click", function() {
             localStorage.clear(); // Clears all stored answers and resets timer
