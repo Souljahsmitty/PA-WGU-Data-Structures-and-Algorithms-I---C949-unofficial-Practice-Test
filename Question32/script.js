@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "B") {
+			if (selectedAnswer.value === "A") {
 				feedback.textContent = "✔ Correct! A **linked list** dynamically allocates memory, allowing it to grow and shrink as needed without requiring contiguous memory.";
 				feedback.className = "correct";
 			} else {
