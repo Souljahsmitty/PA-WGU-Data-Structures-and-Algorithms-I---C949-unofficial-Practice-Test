@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 return;
             }
 
-            if (selectedAnswer.value === "C") {
+            if (selectedAnswer.value === "A") {
                 feedback.textContent = "✔ Correct! A correctly orders the functions by their growth rate (Big-O notation).";
                 feedback.className = "correct";
             } else {
